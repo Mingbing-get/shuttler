@@ -1,0 +1,100 @@
+.style-var-group-list {
+  max-height: 65vh;
+  overflow-y: auto;
+
+  .style-var-group-header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    .style-var-tag {
+      cursor: pointer;
+    }
+
+    .action-icon {
+      font-size: 1.4rem;
+      cursor: pointer;
+
+      &.icon-copy:hover {
+        color: rgb(var(--primary-6));
+      }
+
+      &.icon-delete:hover {
+        color: #f5222d;
+      }
+    }
+  }
+
+  .arco-collapse-item-content-box {
+    padding: 4px 8px;
+    background-color: #fff;
+  }
+}
+
+.style-var-action-tip {
+  p {
+    margin: 0.4rem 0;
+    text-align: start;
+  }
+  text-align: end;
+}
+
+.style-group {
+  display: flex;
+  flex-direction: column;
+
+  .style-one-type {
+    display: flex;
+    align-items: center;
+    border-radius: 0.25rem;
+    padding: 0.2rem;
+    &:hover {
+      background-color: var(--color-fill-1);
+    }
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    & > label {
+      width: 100px;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .icon-add {
+      cursor: pointer;
+      margin-left: 0.4rem;
+      &:hover {
+        color: rgb(var(--primary-6));
+      }
+    }
+
+    .style-one-vars {
+      padding: 0 0.4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 260px);
+      grid-gap: 1rem 0.2rem;
+      flex: 1;
+
+      .style-var-item {
+        display: flex;
+        flex-direction: column;
+
+        .style-var-action {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 0.2rem;
+          .icon-delete {
+            margin-left: 0.4rem;
+            cursor: pointer;
+            &:hover {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}

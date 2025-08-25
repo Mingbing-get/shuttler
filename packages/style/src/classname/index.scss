@@ -1,0 +1,35 @@
+.class-name-setter-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .class-name-setter-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .class-name-setter-item {
+    .arco-list-item-content {
+      padding-right: 1rem;
+    }
+    .class-name-setter-edit-icon {
+      &:hover {
+        color: rgb(var(--primary-6));
+      }
+    }
+    .class-name-setter-delete-icon {
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
+
+.single-class-name {
+  .arco-collapse-item-content-box {
+    background-color: #fff;
+    padding: 4px 8px;
+  }
+}

@@ -1,2 +1,2 @@
-export * from "./src/types";
-export const a = 10;
+export * from './src/types'
+export const a = 10

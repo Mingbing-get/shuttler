@@ -1,0 +1,15 @@
+.popover-target {
+  position: fixed;
+  top: -1000000px;
+  background-color: transparent;
+  z-index: -100000000;
+}
+
+.popover-handle {
+  .arco-popover-content {
+    padding: 0;
+  }
+  .popover-handle-content {
+    padding: 0.4rem 0.6rem;
+  }
+}

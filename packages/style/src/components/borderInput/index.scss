@@ -1,0 +1,21 @@
+.border-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .border-input-item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+
+    & > span {
+      word-break: keep-all;
+      white-space: nowrap;
+      margin-right: 4px;
+      font-size: 12px;
+    }
+  }
+}

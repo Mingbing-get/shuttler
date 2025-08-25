@@ -1,0 +1,30 @@
+.with-express-render {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+
+  .with-express-content {
+    flex: 1;
+    display: flex;
+  }
+
+  .with-express-toggle {
+    display: inline-flex;
+    padding: 0 0.2rem;
+    cursor: pointer;
+    background-color: var(--color-fill-2);
+    border-right: 1px solid var(--color-neutral-3);
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: var(--border-radius-small);
+    border-bottom-left-radius: var(--border-radius-small);
+
+    &:hover {
+      color: rgb(var(--primary-6));
+    }
+
+    &.is-show-express {
+      color: rgb(var(--primary-6));
+    }
+  }
+}

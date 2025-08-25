@@ -1,0 +1,17 @@
+{
+  "name": "@shuttler/i18n",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.0",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}

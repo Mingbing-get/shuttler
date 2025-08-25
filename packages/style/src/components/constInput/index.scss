@@ -1,0 +1,29 @@
+.east-coder-const-input-radio {
+  display: flex;
+  align-items: center;
+  justify-items: stretch;
+  gap: 8px;
+  background-color: var(--color-fill-2);
+  padding: 2px 4px;
+  border-radius: 2px;
+  width: 100%;
+  box-sizing: border-box;
+
+  .east-coder-const-input-radio-item {
+    padding: 0 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    flex-grow: 1;
+    text-align: center;
+    word-break: keep-all;
+    white-space: nowrap;
+    &:hover {
+      background-color: rgb(var(--primary-2));
+      color: #fff;
+    }
+    &.is-active {
+      color: rgb(var(--primary-6));
+    }
+  }
+}

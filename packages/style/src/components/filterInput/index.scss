@@ -1,0 +1,43 @@
+.filter-input-wrapper {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+
+  .filter-input-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.2rem;
+    padding-right: 1.2rem;
+
+    .length-input-wrapper {
+      min-width: unset;
+    }
+
+    .filter-input-delete {
+      position: absolute;
+      right: 0;
+      top: 5px;
+      cursor: pointer;
+      &:hover {
+        color: #f5222d;
+      }
+    }
+
+    & > label {
+      font-size: 0.75rem;
+      padding-right: 10px;
+      word-break: keep-all;
+      white-space: nowrap;
+    }
+  }
+
+  .filter-input-add {
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    &:hover {
+      color: #1890ff;
+    }
+  }
+}

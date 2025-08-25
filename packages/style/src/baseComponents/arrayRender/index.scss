@@ -1,0 +1,28 @@
+.array-render-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .array-render-item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 0.4rem;
+    }
+
+    .array-render-delete {
+      cursor: pointer;
+      margin-left: 0.4rem;
+      &:hover {
+        color: #f5222d;
+      }
+    }
+
+    .array-render-add {
+      cursor: pointer;
+      &:hover {
+        color: #1890ff;
+      }
+    }
+  }
+}

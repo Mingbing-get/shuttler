@@ -1,7 +1,8 @@
-import path from "path";
+import path from 'path'
 
-import { defineConfig } from "vite";
-import dts from "vite-plugin-dts";
+import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
+import external from '../../scripts/external'
 
 export default defineConfig({
   plugins: [
@@ -11,10 +12,13 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "index.ts"),
-      name: "store",
+      entry: path.resolve(__dirname, 'index.ts'),
+      name: 'store',
       fileName: (format) => `index.${format}.js`,
-      formats: ["es", "umd", "cjs"],
+      formats: ['es', 'umd', 'cjs'],
+    },
+    rollupOptions: {
+      external: external,
     },
   },
-});
+})

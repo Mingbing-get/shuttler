@@ -1,0 +1,22 @@
+.read-base64-upload {
+  .arco-upload-list-item {
+    margin: 0;
+    .arco-upload-list-item-picture {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  .arco-upload-list-item-picture-operation {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .arco-upload-list-preview-icon,
+    .arco-upload-list-remove-icon {
+      line-height: normal;
+      margin: 0;
+      display: inline-block;
+    }
+  }
+}

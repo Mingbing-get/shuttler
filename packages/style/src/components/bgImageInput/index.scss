@@ -1,0 +1,11 @@
+.bg-image-input-field {
+  display: flex;
+  align-items: center;
+
+  & > span {
+    white-space: nowrap;
+    word-break: keep-all;
+    margin-right: 6px;
+    font-size: 12px;
+  }
+}

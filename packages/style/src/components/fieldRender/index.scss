@@ -1,0 +1,37 @@
+.style-field-render {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 4px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: rgb(var(--primary-1));
+    .style-field-clear-icon {
+      display: inline-block;
+    }
+  }
+
+  & > label {
+    width: 100px;
+    font-size: 12px;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  & > div {
+    display: inline-flex;
+    flex: 1;
+  }
+
+  .style-field-clear-icon {
+    cursor: pointer;
+    margin-left: 6px;
+    display: none;
+    &:hover {
+      color: rgb(var(--primary-6));
+    }
+  }
+}

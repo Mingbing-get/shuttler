@@ -1,0 +1,46 @@
+.transform-input-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 4px;
+  gap: 8px;
+  width: 100%;
+
+  .transform-input-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .transform-input-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .transform-input-delete {
+        cursor: pointer;
+        &:hover {
+          color: #f5222d;
+        }
+      }
+
+      & > label {
+        font-size: 0.75rem;
+        word-break: keep-all;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .transform-input-add {
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    &:hover {
+      color: #1890ff;
+    }
+  }
+}
+
+.short-input {
+  width: 25%;
+}

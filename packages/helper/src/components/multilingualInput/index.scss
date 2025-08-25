@@ -1,0 +1,47 @@
+.easy-coder-sdk-multilingual-input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+
+  .easy-coder-sdk-multilingual-add-icon {
+    margin: 0;
+    cursor: pointer;
+    &:hover {
+      color: rgb(var(--primary-6));
+    }
+  }
+
+  .arco-input-inner-wrapper-has-prefix > .arco-input {
+    padding-left: 4px;
+  }
+}
+
+.easy-coder-sdk-multilingual-input-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 60vh;
+  overflow-y: auto;
+
+  .easy-coder-sdk-multilingual-input-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    .easy-coder-sdk-multilingual-translate-icon {
+      margin: 0;
+      cursor: pointer;
+      &:hover {
+        color: rgb(var(--primary-6));
+      }
+    }
+
+    .easy-coder-sdk-multilingual-del-icon {
+      cursor: pointer;
+      &:hover {
+        color: rgb(var(--danger-6));
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.style-setter-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .style-setter-search {
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+  }
+
+  .style-setter-group {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--color-fill-2);
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .style-setter-group-label {
+      font-size: 0.75rem;
+      font-weight: bold;
+      margin-bottom: 0.2rem;
+    }
+  }
+}
