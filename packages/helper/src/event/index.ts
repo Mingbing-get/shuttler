@@ -1,9 +1,10 @@
 type EventListener<T> = (data: T) => void
 
-export default class EventManager {
+export default class EventManager<T extends Record<string, any>> {
   private listenerMap: Record<string, EventListener<any>[]> = {}
 
-  addEventListener<T>(type: string, listener: EventListener<T>) {
+  on<K extends keyof T>(_type: K, listener: EventListener<T[K]>) {
+    const type = _type as string
     if (!this.listenerMap[type]) {
       this.listenerMap[type] = []
     }
@@ -15,11 +16,11 @@ export default class EventManager {
     }
   }
 
-  clearListener(type: string) {
-    delete this.listenerMap[type]
+  disconnect(type: keyof T) {
+    delete this.listenerMap[type as string]
   }
 
-  triggerListener<T>(type: string, data: T) {
-    this.listenerMap[type]?.forEach((fn) => fn(data))
+  emit<K extends keyof T>(type: K, data: T[K]) {
+    this.listenerMap[type as string]?.forEach((fn) => fn(data))
   }
 }

@@ -64,6 +64,43 @@ importers:
         specifier: ^4.5.4
         version: 4.5.4(@types/node@24.3.0)(rollup@4.48.0)(typescript@5.9.2)(vite@7.1.3(@types/node@24.3.0)(sass@1.90.0))
 
+  packages/designer-react:
+    dependencies:
+      '@arco-design/web-react':
+        specifier: ^2.66.5
+        version: 2.66.5(@types/react@18.3.24)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
+    devDependencies:
+      '@shuttler/helper':
+        specifier: workspace:^
+        version: link:../helper
+      '@shuttler/i18n':
+        specifier: workspace:^
+        version: link:../i18n
+      '@shuttler/store':
+        specifier: workspace:^
+        version: link:../store
+      '@types/react':
+        specifier: ^18.2.6
+        version: 18.3.24
+      '@types/react-dom':
+        specifier: ^18.2.4
+        version: 18.3.7(@types/react@18.3.24)
+      '@vitejs/plugin-react':
+        specifier: ^5.0.1
+        version: 5.0.1(vite@7.1.3(@types/node@24.3.0)(sass@1.90.0))
+      vite-plugin-imp:
+        specifier: ^2.4.0
+        version: 2.4.0(vite@7.1.3(@types/node@24.3.0)(sass@1.90.0))
+
   packages/helper:
     dependencies:
       '@arco-design/web-react':
@@ -97,8 +134,54 @@ importers:
 
   packages/i18n: {}
 
+  packages/render-react:
+    dependencies:
+      '@arco-design/web-react':
+        specifier: ^2.66.5
+        version: 2.66.5(@types/react@18.3.24)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
+    devDependencies:
+      '@shuttler/helper':
+        specifier: workspace:^
+        version: link:../helper
+      '@shuttler/i18n':
+        specifier: workspace:^
+        version: link:../i18n
+      '@shuttler/store':
+        specifier: workspace:^
+        version: link:../store
+      '@types/react':
+        specifier: ^18.2.6
+        version: 18.3.24
+      '@types/react-dom':
+        specifier: ^18.2.4
+        version: 18.3.7(@types/react@18.3.24)
+      '@vitejs/plugin-react':
+        specifier: ^5.0.1
+        version: 5.0.1(vite@7.1.3(@types/node@24.3.0)(sass@1.90.0))
+      vite-plugin-imp:
+        specifier: ^2.4.0
+        version: 2.4.0(vite@7.1.3(@types/node@24.3.0)(sass@1.90.0))
+
   packages/store:
     dependencies:
+      '@shuttler/helper':
+        specifier: workspace:^
+        version: link:../helper
+      '@shuttler/i18n':
+        specifier: workspace:^
+        version: link:../i18n
+      '@shuttler/style':
+        specifier: workspace:^
+        version: link:../style
       '@shuttler/variable':
         specifier: workspace:^
         version: link:../variable

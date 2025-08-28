@@ -11,7 +11,10 @@
   "license": "ISC",
   "packageManager": "pnpm@10.15.0",
   "dependencies": {
-    "@shuttler/variable": "workspace:^"
+    "@shuttler/variable": "workspace:^",
+    "@shuttler/helper": "workspace:^",
+    "@shuttler/style": "workspace:^",
+    "@shuttler/i18n": "workspace:^"
   },
   "private": false,
   "publishConfig": {

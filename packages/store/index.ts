@@ -1,3 +1,3 @@
-import { a } from '@shuttler/variable'
-
-export const av = 11 + a
+export * from './src/types'
+export { default as StateManager } from './src/stateManager'
+export { default as ElementManager } from './src/elementManager'
